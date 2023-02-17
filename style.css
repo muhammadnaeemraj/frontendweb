@@ -1,0 +1,276 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: #a0bcd4;
+}
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px black; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: black; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #504e70; 
+  }
+.wrapper{
+    /* width: 1070px; */
+    width: 90%;
+    margin: auto;
+}
+.brand{
+    font: sans-serif;
+    font-size: 35px;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    font-weight: 700;
+    padding: 15px 0 25px 0;
+    color: #a0bcd4;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+.nav{
+    font-size: 20px;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+}
+.nav a{
+    text-decoration: none;
+    margin: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    color: rgb(101, 104, 104);
+}
+.nav .active{
+    color: black;
+}
+.nav a:hover{
+    color: black;
+}
+.first-page{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: transparent;
+}
+.first-page .left-side{
+    flex: 50%;
+    padding: 0 45px 0 45px;
+}
+.first-page .right-side{
+    flex: 50%;
+}
+
+.heading-1{
+    font-family: 'Raleway', sans-serif;
+    font-size: 40px;
+    font-weight: 800;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.heading-2{
+    font-size: 35px;
+    text-align: justify;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(101, 104, 104);
+}
+
+.first-page .right-side img{
+    width: 100%;
+    margin-top: 140px;
+    z-index: 1;
+}
+
+/* Second Page Starts from here */
+.row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.second-page{
+    width: 100%;
+    height: 95vh;
+    background-image: url(./images/back.jpg);
+    /* opacity: 0.5; */
+    background-size: cover;
+}
+.second-page .card{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    width: 29%;
+    height: 50%;
+    border-radius: 20px;
+    background-color: #a0bcd4;
+    margin: 10px;
+    opacity: 0.3;
+    box-shadow: 3px 2px 2px 1px rgb(255, 255, 255) inset;
+}
+.second-page .card .text{
+    color: rgba(255, 255, 255, 0.9);
+}
+.second-page .card .percentage{
+    color: black;
+    font-size: 40px;
+}
+.second-page .card .card-heading{
+    font-size: 35px;
+    text-transform: capitalize;
+    font-family: 'Dancing Script', cursive;
+    color: rgb(101, 104, 104);
+}
+.second-page .card .card-sub-heading{
+    margin-top: 10px;
+    font-size: 18px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Third Page */
+.third-page{
+    width: 100%;
+    height: 80vh;
+    padding: 0 200px;
+    line-height: 20px;
+    text-align: center;
+}
+.third-page .heading-2{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.third-page .mission .text{
+    color: rgb(135, 135, 135);
+}
+.third-page .mission button{
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding: 8px 30px;
+    border-radius: 20px;
+    border: none;
+    background-color: azure;
+    box-shadow: 1px 1px 2px 1px rgb(135, 135, 135);
+}
+.third-page .mission button:hover{
+    background-color: #a0bcd4;
+    color: azure;
+    box-shadow: 1px 1px 2px 1px rgb(135, 135, 135) inset;
+}
+
+
+/* Forth page */
+.forth-page{
+    background-image: url(./images/back.jpg);
+    background-size: cover;
+    opacity: 0.7;
+    width: 100%;
+    height: 110vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.forth-page .heading-2{
+    text-align: center;
+    text-transform: capitalize;
+    color: black;
+}
+
+.forth-page .image-container{
+    width: 400px;
+    height: 220px;
+    margin: 10px;
+    border: 2px dashed black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(135, 135, 135);
+}
+.forth-page .text{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    color: rgb(205, 205, 205);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.forth-page .footer{
+    color: white;
+}
+
+
+
+@media screen and (max-width: 950px){
+    .forth-page .row{
+        flex-direction: column;
+    }
+    .forth-page{
+        height: 140vh;
+        padding: 40px 80px 0 80px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 850px){
+    .forth-page .row{
+        flex-direction: column;
+    }
+    .forth-page{
+        height: 140vh;
+        padding: 40px 80px 0 80px;
+        text-align: center;
+    }
+}
+@media screen and (max-width: 700px){
+    .wrapper{
+        width: 100%;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .second-page .card{
+        width: 70%;
+        padding: 20px;
+    }
+    .first-page{
+        height: 140vh;
+    }
+    .first-page .left-side{
+        margin: 50px 0 0 15px;
+    }
+    .first-page .right-side{
+        text-align: center;
+    }
+    .first-page .right-side img{
+        margin-top: -20px;
+        width: 80%;
+    }
+    .second-page{
+        height: 150vh;
+    }
+    .third-page .mission{
+        width: 250%;
+    }
+    .forth-page{
+        height: 160vh;
+    }
+    .forth-page .text{
+        text-align: center;
+    }
+}
